@@ -1,0 +1,70 @@
+.post {
+    margin-inline: auto;
+    max-width: 50rem;
+    border: 0.125rem solid var(--clr-accent);
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    margin-block: 2rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0 0 0 / 0.2);
+    position: relative;
+}
+
+.post__author {
+    font-size: 0.7em;
+    margin-block-start: 0;
+    position: relative;
+}
+
+.post__author::before {
+    content: "@";
+}
+
+.post__author::after,
+.post__likes::before {
+    content: "";
+    position: absolute;
+    height: 0.125rem;
+    width: 40%;
+    background-color: var(--clr-accent);
+}
+
+.post__author::after {
+    bottom: -0.25rem;
+    left: -0.25rem;
+}
+
+.post__text {
+    margin-block: 1.25rem 0.5rem;
+    line-height: 1.6;
+}
+
+.post__btn {
+    position: absolute;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding-inline: 0.5rem;
+}
+
+.post__likes {
+    margin-block: 1rem 0;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.post__likes::before {
+    top: -0.25rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.post__delete {
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.post__like {
+    right: 0.5rem;
+    bottom: 0.5rem;
+}

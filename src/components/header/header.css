@@ -1,0 +1,18 @@
+.header {
+    padding: 1rem 2rem;
+    display: flex;
+    box-shadow: 0 0.5rem 0.5rem hsla(var(--header-shadow-clr), var(--header-shadow-opacity));
+    position: sticky;
+    top: 0;
+    background-color: var(--clr-bg);
+    z-index: 1;
+}
+
+.header__title {
+    margin: 0 auto;
+    color: var(--clr-accent);
+}
+
+.header__logout-btn {
+    margin-inline-start: auto;
+}

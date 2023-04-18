@@ -1,0 +1,16 @@
+.auth {
+    width: fit-content;
+    margin: auto;
+    border: 0.125rem solid var(--clr-accent);
+    padding: 2rem;
+    border-radius: 1.25rem;
+}
+
+.switch-btn {
+    margin-block-end: 1rem;
+}
+
+.error-msg {
+    color: var(--clr-error);
+    margin-block: 1rem -1rem;
+}
